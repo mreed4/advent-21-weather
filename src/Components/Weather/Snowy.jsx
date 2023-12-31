@@ -1,28 +1,28 @@
 export default function Snowy() {
   return (
-    <div class="day">
-      <div class="day-of-week">Sat</div>
-      <div class="date">11</div>
+    <div className="day">
+      <div className="day-of-week">Sat</div>
+      <div className="date">11</div>
 
-      <div class="bar snowy">
-        <div class="weather">
+      <div className="bar snowy">
+        <div className="weather">
           <svg role="img" width="230" height="196" viewBox="0 0 230 196">
-            <use xlink:href="#snowy"></use>
+            <use xlinkHref="#snowy"></use>
           </svg>
         </div>
-        <div class="temperature">
-          32<span class="degrees">&deg;</span>
+        <div className="temperature">
+          32<span className="degrees">&deg;</span>
         </div>
-        <div class="content">
-          <div class="precipitation">
-            <svg role="img" class="icon">
-              <use xlink:href="#precipitation"></use>
+        <div className="content">
+          <div className="precipitation">
+            <svg role="img" className="icon">
+              <use xlinkHref="#precipitation"></use>
             </svg>
             84%
           </div>
-          <div class="low">
-            <svg role="img" class="icon">
-              <use xlink:href="#low"></use>
+          <div className="low">
+            <svg role="img" className="icon">
+              <use xlinkHref="#low"></use>
             </svg>
             28&deg;
           </div>

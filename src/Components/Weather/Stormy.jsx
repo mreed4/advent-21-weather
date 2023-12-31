@@ -1,28 +1,28 @@
 export default function Stormy() {
   return (
-    <div class="day">
-      <div class="day-of-week">Fri</div>
-      <div class="date">10</div>
+    <div className="day">
+      <div className="day-of-week">Fri</div>
+      <div className="date">10</div>
 
-      <div class="bar stormy">
-        <div class="weather">
+      <div className="bar stormy">
+        <div className="weather">
           <svg role="img" width="246" height="187" viewBox="0 0 246 187">
-            <use xlink:href="#stormy"></use>
+            <use xlinkHref="#stormy"></use>
           </svg>
         </div>
-        <div class="temperature">
-          67<span class="degrees">&deg;</span>
+        <div className="temperature">
+          67<span className="degrees">&deg;</span>
         </div>
-        <div class="content">
-          <div class="precipitation">
-            <svg role="img" class="icon">
-              <use xlink:href="#precipitation"></use>
+        <div className="content">
+          <div className="precipitation">
+            <svg role="img" className="icon">
+              <use xlinkHref="#precipitation"></use>
             </svg>
             84%
           </div>
-          <div class="low">
-            <svg role="img" class="icon">
-              <use xlink:href="#low"></use>
+          <div className="low">
+            <svg role="img" className="icon">
+              <use xlinkHref="#low"></use>
             </svg>
             28&deg;
           </div>

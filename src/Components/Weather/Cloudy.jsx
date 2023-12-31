@@ -7,7 +7,7 @@ export default function Cloudy() {
       <div className="bar cloudy">
         <div className="weather">
           <svg role="img">
-            <use xlink:href="#cloudy" width="264" height="166" viewBox="0 0 264 166"></use>
+            <use xlinkHref="#cloudy" width="264" height="166" viewBox="0 0 264 166"></use>
           </svg>
         </div>
         <div className="temperature">
@@ -16,13 +16,13 @@ export default function Cloudy() {
         <div className="content">
           <div className="precipitation">
             <svg role="img" className="icon">
-              <use xlink:href="#precipitation"></use>
+              <use xlinkHref="#precipitation"></use>
             </svg>
             84%
           </div>
           <div className="low">
             <svg role="img" className="icon">
-              <use xlink:href="#low"></use>
+              <use xlinkHref="#low"></use>
             </svg>
             28&deg;
           </div>
