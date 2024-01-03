@@ -1,4 +1,8 @@
-export default function PartlyCloudy() {
+import partlyCloudy from "/images/partly-cloudy.svg";
+import precipitation from "/images/precipitation.svg";
+import low from "/images/low.svg";
+
+export default function PartlyCloudy({ data }) {
   return (
     <div className="day">
       <div className="day-of-week">Sun</div>
@@ -6,24 +10,18 @@ export default function PartlyCloudy() {
 
       <div className="bar partly-cloudy">
         <div className="weather">
-          <svg role="img" width="230" height="209" viewBox="0 0 230 209">
-            <use xlinkHref="#partly-cloudy"></use>
-          </svg>
+          <img src={partlyCloudy} alt="Partly Cloudy" />
         </div>
         <div className="temperature">
           57<span className="degrees">&deg;</span>
         </div>
         <div className="content">
           <div className="precipitation">
-            <svg role="img" className="icon">
-              <use xlinkHref="#precipitation"></use>
-            </svg>
+            <img src={precipitation} alt="Precipitation" />
             84%
           </div>
           <div className="low">
-            <svg role="img" className="icon">
-              <use xlinkHref="#low"></use>
-            </svg>
+            <img src={low} alt="Low" />
             28&deg;
           </div>
         </div>
