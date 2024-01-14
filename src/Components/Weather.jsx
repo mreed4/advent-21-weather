@@ -10,47 +10,42 @@ function leadingZero(num) {
 }
 
 function SVG({ weather }) {
-  function getSVGAttributes(weather) {
-    return {
-      cloudy: {
-        width: 264,
-        height: 166,
-        viewBox: "0 0 264 166",
-      },
-      "partly-cloudy": {
-        width: 230,
-        height: 209,
-        viewBox: "0 0 230 209",
-      },
-      sunny: {
-        width: 208,
-        height: 213,
-        viewBox: "0 0 208 213",
-      },
-      rainy: {
-        width: 160,
-        height: 222,
-        viewBox: "0 0 160 222",
-      },
-      snowy: {
-        width: 230,
-        height: 196,
-        viewBox: "0 0 230 196",
-      },
-      stormy: {
-        width: 246,
-        height: 187,
-        viewBox: "0 0 246 187",
-      },
-    }[weather];
-  }
+  /* */
+  const weatherToSVG = {
+    cloudy: {
+      width: 264,
+      height: 166,
+      viewBox: "0 0 264 166",
+    },
+    "partly-cloudy": {
+      width: 230,
+      height: 209,
+      viewBox: "0 0 230 209",
+    },
+    sunny: {
+      width: 208,
+      height: 213,
+      viewBox: "0 0 208 213",
+    },
+    rainy: {
+      width: 160,
+      height: 222,
+      viewBox: "0 0 160 222",
+    },
+    snowy: {
+      width: 230,
+      height: 196,
+      viewBox: "0 0 230 196",
+    },
+    stormy: {
+      width: 246,
+      height: 187,
+      viewBox: "0 0 246 187",
+    },
+  }[weather];
 
   return (
-    <svg
-      role="img"
-      width={getSVGAttributes(weather).width}
-      height={getSVGAttributes(weather).height}
-      viewBox={getSVGAttributes(weather).viewBox}>
+    <svg role="img" width={weatherToSVG.width} height={weatherToSVG.height} viewBox={weatherToSVG.viewBox}>
       <use xlinkHref={`#${weather}`} href={`#${weather}`}></use>
     </svg>
   );

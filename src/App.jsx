@@ -30,8 +30,6 @@ function App() {
 
     const data = await response.json();
 
-    // console.log(data);
-
     const week = [];
 
     (function populateWeek() {
@@ -43,6 +41,7 @@ function App() {
         const precipitation = data.daily.precipitation_probability_max[i].toFixed(0);
 
         function weatherMap(weatherCode) {
+          /* */
           if (weatherCode === 0) {
             return "sunny";
           }
@@ -51,7 +50,7 @@ function App() {
             return "partly-cloudy";
           }
 
-          if (weatherCode === 3) {
+          if ([3, 45, 48].includes(weatherCode)) {
             return "cloudy";
           }
 
